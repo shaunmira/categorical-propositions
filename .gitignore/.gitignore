@@ -1,0 +1,18 @@
+S = ["a", "b", "c", "d", "e"]
+P = ["a", "f", "c", "g", "e"]
+
+print (S)
+print (P)
+
+for i in S:
+    for j in P:
+        if j == i:
+            break
+    if j != i:
+        break
+    else:
+        S.append(j)
+
+print ()
+print (S)
+print (P)
