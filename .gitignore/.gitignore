@@ -6,9 +6,11 @@ print (P)
 
 for j in P:
     for i in S:
-        if j == i:
+        if i == j:
             break
+    if i != j:
         S.append(j)
+
 
 print ()
 print (S)
