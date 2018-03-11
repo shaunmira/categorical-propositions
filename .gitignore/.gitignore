@@ -4,13 +4,10 @@ P = ["a", "f", "c", "g", "e"]
 print (S)
 print (P)
 
-for i in S:
-    for j in P:
+for j in P:
+    for i in S:
         if j == i:
             break
-    if j == i:
-        break
-    else:
         S.append(j)
 
 print ()
