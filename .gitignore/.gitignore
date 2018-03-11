@@ -1,17 +1,8 @@
-S = ["a", "b", "c", "d", "e"]
-P = ["a", "f", "c", "g", "e"]
+S = [["a"], ["b" ,"c", "d"], ["e"]]
 
-print (S)
-print (P)
+for i in S:
+    for j in S[i]:
+        str = str + S[i][j]
 
-for j in P:
-    for i in S:
-        if i == j:
-            break
-    if i != j:
-        S.append(j)
+print (str)
 
-
-print ()
-print (S)
-print (P)
